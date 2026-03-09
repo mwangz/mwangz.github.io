@@ -44,6 +44,26 @@ a:hover {
     margin-top: 30px;
 }
 
+.edu-item {
+    margin-bottom: 20px;
+}
+
+.degree {
+    float: left;
+    font-weight: bold;
+}
+
+.year {
+    float: right;
+    font-style: italic;
+}
+
+.edu-item::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+    
 ul {
     padding-left: 20px;
 }
@@ -62,16 +82,11 @@ ul {
 <p>
 Ph.D. Student<br>
 School of Computing<br>
-Binghamton University (SUNY)
+Binghamton University, The State University of New York (SUNY)
 </p>
 
 <p>
 Email: <a href="mailto:mwang150@binghamton.edu">mwang150@binghamton.edu</a><br>
-Phone: +1 (352) 226-4228<br>
-Location: Vestal, NY
-</p>
-
-<p>
 <a href="mwang-cv.pdf">CV</a> |
 <a href="https://github.com/mwangz/">GitHub</a>
 </p>
@@ -95,30 +110,32 @@ Location: Vestal, NY
 <div class="section">
 <h2>Education</h2>
 
-<p>
-<b>Ph.D. in Computer Science</b><br>
-Binghamton University, State University of New York<br>
-Expected Graduation: Summer 2026<br>
-Advisor: Prof. Ping Yang
-</p>
+<div class="edu-item">
+  <span class="degree">Ph.D. in Computer Science</span>
+  <span class="year">2022 – present</span><br>
+  Binghamton University, State University of New York, Binghamton, NY<br>
+  Dissertation (Tentative): GNN-Based Real-Time Malware Detection<br>
+  Advisor: Prof. Ping Yang<br>
+</div>
 
-<p>
-<b>M.S. in Computer and Information Science</b><br>
-Cleveland State University<br>
-2016 – 2018
-</p>
+<div class="edu-item">
+  <span class="degree">M.S. in Computer and Information Science</span>
+  <span class="year">2016 – 2018</span><br>
+  Department of Electrical Engineering and Computer Science (EECS), Cleveland State University, Cleveland, OH
+</div>
 
-<p>
-<b>M.S. in Control Science and Engineering</b><br>
-Harbin Institute of Technology<br>
-2006 – 2008
-</p>
+<div class="edu-item">
+  <span class="degree">M.S. in Control Science and Engineering</span>
+  <span class="year">2006 – 2008</span><br>
+  Department of Automation, Harbin Institute of Technology, Harbin, China<br>
+  Thesis: An Application of EPICS in a Process Control System
+</div>
 
-<p>
-<b>B.S. in Automation</b><br>
-Harbin Institute of Technology<br>
-2002 – 2006
-</p>
+<div class="edu-item">
+  <span class="degree">B.S. in Automation</span>
+  <span class="year">2002 – 2006</span><br>
+  Harbin Institute of Technology, Harbin, China
+</div>
 
 </div>
 
@@ -154,34 +171,35 @@ Introduction to Computer Security (CS 458/558), March 2026</li>
 <div class="section">
 <h2>Publications</h2>
 
+<p><em>* indicates equal contribution</em></p>
+
 <ol>
 
 <li>
-David DeFazio*, Hrudayangam Mehta*, <b>Meng Wang*</b>, et al.  
-Vision Language Models Can Parse Floor Plan Maps.  
-ELSP Journal of Robot Learning, 2025
+David DeFazio*, Hrudayangam Mehta*, <b>Meng Wang*</b>, Ping Yang, Jeremy Blackburn, Shiqi Zhang. 
+<a href="https://arxiv.org/pdf/2409.12842">Vision Language Models Can Parse Floor Plan Maps</a>.  
+The ELSP Journal of <b>Robot Learning</b>, 2025 [<a href="https://www.elspub.com/doi/10.55092/rl20250011">ELSP Official</a>; <a href="https://sites.google.com/view/vlm-floorplan/">Project webpage</a>]
 </li>
 
 <li>
-<b>Meng Wang</b>, Yohei Hayamizu, Matthew Tang, et al.  
-Physical Attacks on Robot Navigation Systems.  
+<b>Meng Wang</b>, Yohei Hayamizu, Matthew Tang, Kevin Gopalan, Shiqi Zhang, Ping Yang. 
+<a href="link_to_pdf_or_publisher" target="_blank">Physical Attacks on Robot Navigation Systems</a>.  
 RSS Workshop, 2025
 </li>
 
 <li>
-Priti Wakodikar*, Joon-young Gwak*, <b>Meng Wang</b>, et al.  
-Graphite: Real-Time Graph-Based Detection of Windows Fileless Malware Attacks.  
-SecureComm 2024
+Priti Wakodikar*, Joon-young Gwak*, <b>Meng Wang</b>, Guanhua Yan, Xiaokui Shu, Scott Stoller, Ping Yang. 
+<a href="link_to_pdf_or_publisher" target="_blank">Graphite: Real-Time Graph-Based Detection of Windows Fileless Malware Attacks</a>.  
+SecureComm, 2024
 </li>
 
 <li>
-Joon-young Gwak, Priti Wakodikar, <b>Meng Wang</b>, et al.  
-Debugging Malware Classification Models Based on Audit Logs with Explainable AI.  
-ICDM Workshop 2023
+Joon-young Gwak, Priti Wakodikar, <b>Meng Wang</b>, Guanhua Yan, Xiaokui Shu, Scott Stoller, Ping Yang. 
+<a href="link_to_pdf_or_publisher" target="_blank">Debugging Malware Classification Models Based on Audit Logs with Explainable AI</a>.  
+ICDM Workshop, 2023
 </li>
 
 </ol>
-
 </div>
 
 
@@ -191,7 +209,7 @@ ICDM Workshop 2023
 <p>
 Meng Wang<br>
 School of Computing<br>
-Binghamton University<br>
+Binghamton University (SUNY)<br>
 Email: <a href="mailto:mwang150@binghamton.edu">mwang150@binghamton.edu</a>
 </p>
 
