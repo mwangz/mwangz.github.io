@@ -1,204 +1,234 @@
-
 <!DOCTYPE HTML>
-<!--
-    Read Only by Pixelarity
-    pixelarity.com | hello@pixelarity.com
-    License: pixelarity.com/license
--->
 <html>
-    <head>
-        <title>Meng Wang, Ph.D. Student</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    </head>
-    <body>
+<head>
+    <title>Meng Wang, Ph.D. Student</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <div  id="logo" style="display: none;">Meng Wang, Ph.D. Student</div>
+    <style>
+        /* 全局设置 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #4a4a4a;
+            background-color: #f9f9f9;
+        }
 
-<!-- Header -->
-    <section id="header">
-        <header>
-            <!-- <span class="image avatar"><img src="images/image-mwang.jpg" alt="" /></span> -->
-            <img src="images/image-mwang.jpg" alt="" style="width:150px" />
-            <h1>
-                <a href="#">Meng Wang</a>
-            </h1>
-        </header>
-        <nav id="nav">
+        a {
+            color: #2a7ae2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 页面整体居中，左右留白 */
+        #page-wrapper {
+            max-width: 1200px; /* 整个内容最大宽度 */
+            margin: 0 auto;     /* 居中 */
+            display: flex;
+        }
+
+        /* 左侧栏 */
+        #sidebar {
+            width: 250px;
+            background: linear-gradient(180deg, #f0f0f0, #e6e6e6);
+            padding: 50px 20px;
+            box-sizing: border-box;
+            position: fixed;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        #sidebar img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid #d0d7e2;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        #sidebar h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+            color: #2c3e50;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* 右侧内容 */
+        #content {
+            margin-left: 270px; /* 左侧栏宽度 + 间距 */
+            padding: 60px 50px;
+            flex: 1;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        #content section {
+            margin-bottom: 60px;
+        }
+
+        #content h3 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d0d7e2;
+            padding-bottom: 5px;
+        }
+
+        #content p, #content li {
+            font-size: 16px;
+            line-height: 1.65;
+            font-weight: 400;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* 教育经历样式 */
+        .edu-item {
+            margin-bottom: 15px;
+        }
+
+        .edu-item .degree {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="page-wrapper">
+    <!-- 左侧栏 -->
+    <div id="sidebar">
+        <img src="images/image-mwang.jpg" alt="Meng Wang">
+        <h1>Meng Wang</h1>
+    </div>
+
+    <!-- 右侧内容 -->
+    <div id="content">
+
+        <!-- About Me -->
+        <section id="one">
+            <h3>About Me</h3>
+            <p>
+                I am a Ph.D. student in Computer Science at Binghamton University (<a href="https://www.binghamton.edu/">SUNY Binghamton</a>), advised by <a href="https://www.binghamton.edu/computer-science/people/profile.html?id=pyang">Prof. Ping Yang</a>. I work on AI-based Security, Trustworthy AI, Malware Detection, and Robot Security.
+            </p>
+            <p>
+                I received my M.S. in Computer and Information Science from Cleveland State University (2016-2018), and my M.S. and B.S. degrees in Control Science and Automation from Harbin Institute of Technology (2006-2008, 2002-2006).
+            </p>
+            <p>
+                My CV (<a href="mwang-cv.pdf">pdf</a>) was updated in 2026. Feel free to reach out via <a href="mailto:mwang150@binghamton.edu">Email</a>.
+            </p>
+        </section>
+
+        <!-- Publications -->
+        <section id="two">
+            <h3>Publications</h3>
             <ul>
-                <li></li>
-                <li><a href="#one" class="active" style="font-variant:small-caps">Home</a></li>
-                <li><a href="#two" style="font-variant:small-caps">Publications</a></li>
-                <li><a href="#three" style="font-variant:small-caps">Teaching Experience</a></li>
-                <li><a href="#four" style="font-variant:small-caps">Education</a></li>
-                <li><a href="#five" style="font-variant:small-caps">Contact</a></li>
-                <li></li>
+                <li>
+                    David DeFazio*, Hrudayangam Mehta*, <b>Meng Wang*</b>, Ping Yang, Jeremy Blackburn, Shiqi Zhang. 
+                    <a href="https://arxiv.org/pdf/2409.12842">Vision Language Models Can Parse Floor Plan Maps</a>.  
+                    The ELSP Journal of <b>Robot Learning</b>, 2025 [<a href="https://www.elspub.com/doi/10.55092/rl20250011">ELSP Official</a>; <a href="https://sites.google.com/view/vlm-floorplan/">Project webpage</a>]
+                </li>
+                <li>
+                    <b>Meng Wang</b>, Yohei Hayamizu, Matthew Tang, Kevin Gopalan, Shiqi Zhang, Ping Yang. 
+                    <a href="https://openreview.net/pdf?id=A4AWclA4aC">Physical Attacks on Robot Navigation Systems</a>.  
+                    RSS 2025 Workshop on Reliable Robotics: Safety and Security in the Face of Generative AI , 2025
+                </li>
+                <li>
+                    Priti Wakodikar*, Joon-young Gwak*, <b>Meng Wang</b>, Guanhua Yan, Xiaokui Shu, Scott Stoller, Ping Yang. 
+                    <a href="https://www3.cs.stonybrook.edu/~stoller/papers/graphite2024.pdf">Graphite: Real-Time Graph-Based Detection of Windows Fileless Malware Attacks</a>.  
+                    SecureComm, 2024
+                </li>
+                <li>
+                    Joon-young Gwak, Priti Wakodikar, <b>Meng Wang</b>, Guanhua Yan, Xiaokui Shu, Scott Stoller, Ping Yang. 
+                    <a href="https://ieeexplore.ieee.org/document/10411579">Debugging Malware Classification Models Based on Audit Logs with Explainable AI</a>.  
+                    ICDM Workshop, 2023
+                </li>
             </ul>
-        </nav>
-    </section>
+        </section>
 
-<!-- Wrapper -->
-<div id="wrapper">
+        <!-- Teaching Experience -->
+        <section id="three">
+            <h3>Teaching Experience</h3>
+            <ul>
+                <li>
+                    <b>Teaching Assistant</b> — Binghamton University
+                    <ul>
+                        <li>Introduction to Computer Security (CS 458/558)  
+                            Fall 2022 – Spring 2026 (ongoing)
+                        </li>
+                        <li>Operating Systems (CS 350)  
+                            Fall 2025
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Main -->
-        <div id="main">
-            <!-- One -->
-<section id="one">
-    <div class="container">
+        <!-- Education -->
+        <section id="four">
+            <h3>Education</h3>
+            <div class="edu-item">
+                <span class="degree">Ph.D. in Computer Science</span> (2022 – present)<br>
+                Binghamton University, State University of New York, Binghamton, NY<br>
+                Dissertation (Tentative): GNN-Based Real-Time Malware Detection<br>
+                Advisor: Prof. Ping Yang<br>
+            </div>
 
-  <h3>Meng Wang</h3>
-        <ul><ul>
+            <div class="edu-item">
+                <span class="degree">M.S. in Computer and Information Science</span> (2016 – 2018)<br>
+                Department of Electrical Engineering and Computer Science (EECS), Cleveland State University, Cleveland, OH
+            </div>
+
+            <div class="edu-item">
+                <span class="degree">M.S. in Control Science and Engineering</span> (2006 – 2008)<br>
+                Department of Automation, Harbin Institute of Technology, Harbin, China<br>
+                Thesis: An Application of EPICS in a Process Control System
+            </div>
+
+            <div class="edu-item">
+                <span class="degree">B.S. in Automation</span> (2002 – 2006)<br>
+                Harbin Institute of Technology, Harbin, China
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="five">
+            <h3>Contact</h3>
             <p>
-            	I am a Ph.D. student in Computer Science at Binghamton University (<a href="https://www.binghamton.edu/">SUNY Binghamton</a>), advised by <a href="https://www.binghamton.edu/computer-science/people/profile.html?id=pyang">Prof. Ping Yang</a>. I work on AI-based Security, Trustworthy AI, Malware Detection, and Robot Security.
-            </p> 
-
-            <p>
-            	I received my M.S. in Computer and Information Science from Cleveland State University (2016-2018), and my M.S. and B.S. degrees in Control Science and Automation from Harbin Institute of Technology (2006-2008, 2002-2006).
-            </p>
-            	
-            <p>
-              My CV (<a href="mwang-cv.pdf">pdf</a>) was updated in 2026. Feel free to reach out via <a href="mailto:mwang150@binghamton.edu">Email</a>.
-            </p>
-            	
-            <p>
-            <p>
-
-      </ul></ul>
-
-  </div>
-</section>
-
-<section id="two">
-    <div class="container">
-        <h3>Publications</h3>
-        <ul><ul>
-           <li>
-David DeFazio*, Hrudayangam Mehta*, <b>Meng Wang*</b>, Ping Yang, Jeremy Blackburn, Shiqi Zhang. 
-<a href="https://arxiv.org/pdf/2409.12842">Vision Language Models Can Parse Floor Plan Maps</a>.  
-The ELSP Journal of <b>Robot Learning</b>, 2025 [<a href="https://www.elspub.com/doi/10.55092/rl20250011">ELSP Official</a>; <a href="https://sites.google.com/view/vlm-floorplan/">Project webpage</a>]
-The work was also presented at the Northeast Robotics Colloquium, Ithaca NY, 2025
-</li>
-
-<li>
-<b>Meng Wang</b>, Yohei Hayamizu, Matthew Tang, Kevin Gopalan, Shiqi Zhang, Ping Yang. 
-<a href="https://openreview.net/pdf?id=A4AWclA4aC" target="_blank">Physical Attacks on Robot Navigation Systems</a>.  
-The RSS 2025 Workshop on Reliable Robotics: Safety and Security in the Face of Generative AI , 2025
-</li>
-
-<li>
-Priti Wakodikar*, Joon-young Gwak*, <b>Meng Wang</b>, Guanhua Yan, Xiaokui Shu, Scott Stoller, Ping Yang. 
-<a href="https://www3.cs.stonybrook.edu/~stoller/papers/graphite2024.pdf" target="_blank">Graphite: Real-Time Graph-Based Detection of Windows Fileless Malware Attacks</a>.  
-SecureComm, 2024
-</li>
-
-<li>
-Joon-young Gwak, Priti Wakodikar, <b>Meng Wang</b>, Guanhua Yan, Xiaokui Shu, Scott Stoller, Ping Yang. 
-<a href="https://ieeexplore.ieee.org/document/10411579" target="_blank">Debugging Malware Classification Models Based on Audit Logs with Explainable AI</a>.  
-ICDM Workshop, 2023
-</li>
-        </ul></ul>
-    </div>                          
-</section>
-
-<section id="three">
-    <div class="container">
-        <h3>Teaching Experience</h3>
-        <ul>
-            <li>
-                <b>Teaching Assistant</b> — Binghamton University
-                <ul>
-                    <li>Introduction to Computer Security (CS 458/558)  
-                        Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024, Spring 2025, Spring 2026 (ongoing)
-                    </li>
-                    <li>Operating Systems (CS 350)  
-                        Fall 2025
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</section>
-
-
-<section id="four">
-    <div class="container">
-
-    <h3>Education</h3>
-   <div class="edu-item">
-  <span class="degree">Ph.D. in Computer Science</span>
-  <span class="year">2022 – present</span><br>
-  Binghamton University, State University of New York, Binghamton, NY<br>
-  Dissertation (Tentative): GNN-Based Real-Time Malware Detection<br>
-  Advisor: Prof. Ping Yang<br>
-</div>
-
-<div class="edu-item">
-  <span class="degree">M.S. in Computer and Information Science</span>
-  <span class="year">2016 – 2018</span><br>
-  Department of Electrical Engineering and Computer Science (EECS), Cleveland State University, Cleveland, OH
-</div>
-
-<div class="edu-item">
-  <span class="degree">M.S. in Control Science and Engineering</span>
-  <span class="year">2006 – 2008</span><br>
-  Department of Automation, Harbin Institute of Technology, Harbin, China<br>
-  Thesis: An Application of EPICS in a Process Control System
-</div>
-
-<div class="edu-item">
-  <span class="degree">B.S. in Automation</span>
-  <span class="year">2002 – 2006</span><br>
-  Harbin Institute of Technology, Harbin, China
-</div>
-
-
-    </div>
-</section>
-
-                        
-<section id="five">
-    <div class="container">
-        <h3>Contact</h3>
-            <ul><ul>
-
                 Meng Wang, Ph.D. Student<br>
                 School of Computing<br>
                 Thomas J. Watson College of Engineering and Applied Science<br>
                 Binghamton University, The State University of New York (SUNY Binghamton)<br>
                 4400 Vestal Parkway East<br>
                 Binghamton, NY 13902-6000<br>
-                
-                Email: mwang150@binghamton.edu<br>
+                Email: <a href="mailto:mwang150@binghamton.edu">mwang150@binghamton.edu</a>
+            </p>
+        </section>
 
-            </ul></ul>
-        </div>
-</section>
+    </div>
+</div>
 
-                    </div>
-
-                    <section id="footer">
-                        <div class="container">
-                            <ul class="copyright">
-                                <li>&copy; Meng Wang. All rights reserved.</li>
-                            </ul>
-                        </div>
-                    </section>
-
-            </div>
-
-      <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrollzer.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script src="assets/js/main.js"></script>
-
-
-    </body>
+</body>
 </html>
-
