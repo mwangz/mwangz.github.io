@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <style>
+        :root {
+          --main-blue: #52adc8;
+          --text-main: #2c3e50;
+          --text-soft: #555;
+          --border-soft: #e0e6ed;
+          --sidebar-bg: #f7f9fb;
+        }
+        
         /* 全局设置 */
         body, html {
             margin: 0;
             padding: 0;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: #4a4a4a;
-            background-color: #f9f9f9;
+            color: var(--text-main);
+            background-color: #f5f7fa;
         }
 
         a {
-            color: #2a7ae2;
+            color: var(--main-blue);
             text-decoration: none;
         }
         a:hover {
@@ -33,7 +41,7 @@
         /* 左侧栏 */
         #sidebar {
             width: 250px;
-            background: linear-gradient(180deg, #f0f0f0, #e6e6e6);
+            background: var(--sidebar-bg);
             padding: 50px 20px;
             box-sizing: border-box;
             position: fixed;
@@ -42,16 +50,16 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+            box-shadow: 1px 0 6px rgba(0,0,0,0.05);
             border-radius: 8px;
         }
 
         #sidebar img {
-            width: 140px;
-            height: 140px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            border: 3px solid #d0d7e2;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 3px #e6ecf2;
             object-fit: cover;
             margin-bottom: 20px;
         }
@@ -69,8 +77,8 @@
             margin-left: 270px; /* 左侧栏宽度 + 间距 */
             padding: 60px 50px;
             flex: 1;
-            background-color: #fff;
-            border-radius: 8px;
+            background-color: #ffffff;
+            border-radius: 6px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
@@ -81,10 +89,10 @@
         #content h3 {
             font-size: 26px;
             font-weight: 700;
-            color: #2c3e50;
+            color: var(--text-main);
             margin-top: 0;
             margin-bottom: 20px;
-            border-bottom: 2px solid #d0d7e2;
+            border-bottom: 1px solid var(--border-soft);
             padding-bottom: 5px;
         }
 
@@ -92,7 +100,7 @@
             font-size: 16px;
             line-height: 1.65;
             font-weight: 400;
-            color: #555;
+            color: var(--text-soft);
         }
 
         ul {
@@ -112,6 +120,13 @@
             font-weight: 600;
             color: #2c3e50;
         }
+        
+        .sidebar-title {
+            font-size: 14px;
+            color: #6b7280;
+            margin-top: 6px;
+            margin-bottom: 10px;
+        }
 
     </style>
 </head>
@@ -122,6 +137,7 @@
     <div id="sidebar">
         <img src="images/image-mwang.jpg" alt="Meng Wang">
         <h1>Meng Wang</h1>
+        <p class="sidebar-title">PhD Student at SUNY Binghamton</p>
     </div>
 
     <!-- 右侧内容 -->
